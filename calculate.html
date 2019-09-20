@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="Chetan Maheshwari">
+    <!-- Meta Description -->
+    <meta name="description" content="Here you can get awesome cakes for a resonable rate .">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="Cake, Dessert ,Order , Discount, Factory, Delicious, Resonable, Cheap">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Cake Make</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+		CSS
+		============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/calculating.css" />
+    <script src="js/calculator.js"></script>
+</head>
+
+<body>
+    <header id="header" id="home">
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
+                        <div class="menu-social-icons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
+                        <a class="btns" href="tel:+123 456 789">+123 456 789</a>
+                        <a class="btns" href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+                        <a class="icons" href="tel:123 456 789">
+                            <span class="lnr lnr-phone-handset"></span>
+                        </a>
+                        <a class="icons" href="mailto:xyz@gmail.com">
+                            <span class="lnr lnr-envelope"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay overlay-bg">
+            <a href="index.html"><img src="img/logo.png" alt="" title="" /></a> </div>
+        <div class="container main-menu">
+            <div class="row align-items-center justify-content-between d-flex">
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="index.html">Home</a></li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </div>
+    </header><!-- #header -->
+
+    <!-- start banner Area -->
+    <section class="banner-area relative about-banner" id="home">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        Checkout
+                    </h1>
+                    <p class="text-white link-nav"><a href="menu.html">Menu </a> <span
+                            class="lnr lnr-arrow-right"></span> <a href="calculate.html"> Order</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner Area -->
+
+    <!-- Start home-about Area -->
+    <section class="home-about-area menu-list-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+
+                    <div id="wrap">
+
+                        <div>
+
+                            <div class="col-lg-8">
+                                
+                                    <form enctype="multipart/form-data" method="POST" action="secure-mail.php" 
+                                    class="contact-form text-right">
+                                    <legend>Your Details:</legend>
+                                <hr>
+                                    <div class="row">
+                                        <div class="col-lg-6 form-group">
+                                            <input name="sender_name"
+                                             placeholder="Enter your name"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Enter your name'"
+                                                class="common-input mb-20 form-control" required="" type="text">
+
+                                            <input name="sender_email" placeholder="Enter email address"
+                                                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Enter email address'"
+                                                class="common-input mb-20 form-control" required="" type="email">
+
+                                            </div>                                       
+                                    </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        <fieldset>
+                            <legend>Calculate Your Cake Price!</legend>
+                            <hr>
+                            <label>Name of Cake:</label>
+                            <br>
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round6"
+                                    onclick="calculateTotal()" />Strawberry Shortcake-0.5kg
+                                (&#8377;15)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round8"
+                                    onclick="calculateTotal()" />Strawberry Shortcake-1.5kg
+                                (&#8377;20)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round10"
+                                    onclick="calculateTotal()" />Strawberry Shortcake-2kg
+                                (&#8377;25)</label><br />
+
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round12"
+                                    onclick="calculateTotal()" />Soft Lady Fingers-0.5kg
+                                (&#8377;10)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round14"
+                                    onclick="calculateTotal()" />Soft Lady Fingers-1.5kg
+                                (&#8377;20)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round16"
+                                    onclick="calculateTotal()" />Soft Lady Fingers-2kg
+                                (&#8377;30)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round18"
+                                    onclick="calculateTotal()" />Orange Chiffon Cake-0.5kg
+                                (&#8377;20)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round20"
+                                    onclick="calculateTotal()" />Orange Chiffon Cake-1.5kg
+                                (&#8377;30)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round22"
+                                    onclick="calculateTotal()" />Orange Chiffon Cake-2kg
+                                (&#8377;35)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round24"
+                                    onclick="calculateTotal()" />Angel Food Cake-0.5kg
+                                (&#8377;10)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round26"
+                                    onclick="calculateTotal()" />Angel Food Cake-1.5kg
+                                (&#8377;20)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round28"
+                                    onclick="calculateTotal()" />Angel Food Cake-2kg
+                                (&#8377;25)</label><br />
+
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round30"
+                                    onclick="calculateTotal()" />Chocolate-Glazed Cake-0.5kg
+                                (&#8377;15)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round32"
+                                    onclick="calculateTotal()" />Chocolate-Glazed Cake-1.5kg
+                                (&#8377;25)</label><br />
+                            <label class='radiolabel'><input type="radio" name="selectedcake" value="Round34"
+                                    onclick="calculateTotal()" />Chocolate-Glazed Cake-2kg
+                                (&#8377;40)</label><br />
+
+
+                            <br />
+                            <label>Filling</label>
+
+                            <select id="filling" name='filling' onchange="calculateTotal()">
+                                <option value="None">Select Filling</option>
+                                <option value="Lemon">Lemon(&#8377;5)</option>
+                                <option value="Custard">Custard(&#8377;5)</option>
+                                <option value="Fudge">Fudge(&#8377;7)</option>
+                                <option value="Mocha">Mocha(&#8377;8)</option>
+                                <option value="Raspberry">Raspberry(&#8377;10)</option>
+                                <option value="Pineapple">Pineapple(&#8377;5)</option>
+                                <option value="Dobash">Dobash(&#8377;9)</option>
+                                <option value="Mint">Mint(&#8377;5)</option>
+                                <option value="Cherry">Cherry(&#8377;5)</option>
+                                <option value="Apricot">Apricot(&#8377;8)</option>
+                                <option value="Buttercream">Buttercream(&#8377;7)</option>
+                                <option value="Chocolate Mousse">Chocolate Mousse(&#8377;12)</option>
+                            </select>
+                            <br />
+                            <p>
+                                <label for='includecandles' class="inlinelabel">Include
+                                    Candles(&#8377;20)</label>
+                                <input type="checkbox" id="includecandles" name='includecandles'
+                                    onclick="calculateTotal()" />
+                            </p>
+
+                            <p>
+                                <label class="inlinelabel" for='includeinscription'>Include
+                                    Inscription(&#8377;35)</label>
+                                <input type="checkbox" id="includeinscription" name="includeinscription"
+                                    onclick="calculateTotal()" />
+                                <input type="text" id="theinscription" name="theinscription"
+                                    value="Enter Inscription" />
+                            </p>
+                            <hr>
+                            <label name="message" ><h2>Total Price:
+                                <div id="totalPrice">
+
+                                </div></h2>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <hr>
+                    <div class="col-lg-12">
+                        <div class="alert-msg" style="text-align: left;"></div>
+                        <label>
+                                <button 
+                                type="submit" name="button" value="Submit" class="genric-btn primary" style="float: right;">Submit</button>
+                          
+                        </label>
+                    </div>
+
+
+                    </form>
+                    <h3><?php include "secure_email_code.php"?></h3>
+                </div>
+
+            </div>
+            <!--End of wrap-->
+
+        </div>
+        </div>
+        </div>
+        <img class="about-img" src="img/about-img.png" alt="">
+    </section>
+    <!-- End home-about Area -->
+
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>About Us</h6>
+                        <p>
+                            We Are known for our passion towards baking cakes from our heart which people really love.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Newsletter</h6>
+                        <p>Stay updated with us</p>
+                        <div class="" id="mc_embed_signup">
+                            <form target="_blank" novalidate="true" action="mail.php" method="get" class="form-inline">
+                                <input class="form-control" name="EMAIL" placeholder="Email Address"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'"
+                                    required="" type="email">
+                                <button class="click-btn"><i class="lnr lnr-arrow-right"
+                                        aria-hidden="true"></i></button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                        type="text">
+                                </div>
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                    <div class="single-footer-widget">
+                        <h6>Follow Us</h6>
+                        <p>Let us be social</p>
+                        <div class="footer-social d-flex align-items-center">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <p class="footer-text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | Chetan
+                        Maheshwari </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
